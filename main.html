@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <div class="main_login">
+        <div class="user">
+            <lable>ชื่อ (ไม่ต้องใส่นามสกุล)</lable>
+            <input type="text" id="user">
+        </div>
+        <div class="studentID">
+            <lable>รหัสนักเรียน</lable>
+            <input type="number" id="studentID">
+        </div>
+        <div>
+            <input type="submit" style="font-size:1vm" class="btn" value="Login"onclick="LoginUser()">
+        </div>
+        <div>
+            <p>
+                heeue
+                <p></p>
+            </p>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0px;
+    }
+    
+    .main_login {
+        background: grey;
+        margin: auto;
+        box-shadow: 7px 7px 60px #000;
+        border-radius: 10px;
+        padding: 1rem
+    }
+    
+    input {
+        display: block;
+        padding: 5px;
+        margin: auto;
+        width: 100%;
+        max-width: 70%;
+        border-radius: 7px;
+        border: none;
+        outline: 5px;
+    }
+    
+    lable {
+        font-size: 1.8vw;
+        margin-left: 12%
+    }
+    
+    .btn {
+        margin-top: 5%
+    }
+    
+    div.user,div.studentID {
+        margin-top: 3%;
+        margin-bottom: 3%
+    }
+    
+    @media (max-width:599px) {
+        .main_login {
+            width: 70%;
+            margin-top: 40%
+        }
+        
+        input {
+            max-width:       }
+        
+        lable {
+            margin-left: 
+        }
+    }
+    
+    @media (min-width:600px) {
+        .main_login {
+            width: 70%;
+            margin-top: 10%
+        }
+        
+    }
+    
+</style>
+<script>
+    function LoginUser()
+    {
+    var username = document.getElementById("user").value;
+    var password = document.getElementById("studentID").value;
+    google.script.run.withSuccessHandler(function(output) 
+    {
+      if(output == 'TRUE')
+      {
+         window.open('https://www.google.com');
+      }
+      else if(output == 'FALSE')
+      {
+        document.getElementById("errorMessage").innerHTML = "คุณกรอกข้อมูลไม่ถูกต้อง!";     
+      }    
+    }).checkLogin(username, password);
+    }
+</script>
+</html>

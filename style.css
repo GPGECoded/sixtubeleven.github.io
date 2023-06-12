@@ -1,3 +1,4 @@
+/* Main Screen */
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +8,14 @@
 
 
 
-table {
-    max-width: 100%;
-}
-
-.max100 {
-    width: 100%;
-    border-radius: 2%;
-}
-    
+/* Head Menu */
 .main {
     width: 100%;
 }
 
 .main-btn {
     width: 25%;
-    height: 3rem;
+    height: 2rem;
     background: pink;
 }
 
@@ -30,9 +23,70 @@ table {
     text-decoration: none;
     text-align: center;
     font-size: 3vw;
-    background: pink;
     width: 100%;
     height: 100%;
+    margin-top: 2%;
+    padding: 0.1rem;
+}
+
+
+
+/* Class Schedule */
+
+/* Daily Duty */
+
+
+
+/* Work Files */
+.subject-title {
+    font-size: 3.5vw;
+}
+
+.des {
+    font-size: 3vw;
+}
+
+.dl-btn {
+    font-size: 3.5vw;
+    text-align: center;
+    text-decoration: none;
+    background: skyblue;
+    box-shadow: 10px;
+    border-radius: 5px;
+    width: 70%;
+    margin: auto;
+    margin-top: 1.2rem;
+}
+
+.dl-text{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+.img-work-logo {
+    text-align: center;
+    width: 10%;
+    margin-left: 0.5rem;
+}
+
+.see-all {
+    font-size: 3vw;
+    margin-left: 60%;
+}
+
+
+
+
+/* For All */
+table {
+    max-width: 100%;
+}
+
+.max100 {
+    width: 100%;
+    border-radius: 2%;
 }
 
 .sub {
@@ -49,30 +103,6 @@ h1 {
     font-size: 7vw;
 }
 
-.subject-title {
-    font-size: 3.5vw;
-}
-
-.des {
-    font-size: 3vw;
-}
-
-.dl-btn {
-    font-size: 3.5vw;
-    text-align: center;
-    text-decoration: none;
-    background: skyblue;
-    box-shadow: 10px;
-    border-radius: 5px;
-    width: 60%;
-    margin: auto;
-    margin-top: 1.2rem;
-}
-
-.dl-text{
-    font-size: 1.5vw;
-}
-
 .sub-content {
     width: 30%;
     max-width: 100%;
@@ -83,13 +113,15 @@ h1 {
     padding: 0.5rem;
 }
 
-.day {
-    font-size: 3vw;
-    margin-left: 1.5vm;
+a {
+    text-decoration: none;
 }
+    
 
-.img-work-logo {
-    text-align: center;
-    width: 7%;
-    margin-left: 0.5rem;
-}
+
+
+
+
+
+
+
